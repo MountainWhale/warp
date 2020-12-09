@@ -12,5 +12,6 @@
 ### Listing warp points
  - python3 ~/path_to_list.py
 
-### Important Note
+### Important Notes
 - Aliases for each cmd make life easier
+- Ensure that you're in the correct directory when adding points
