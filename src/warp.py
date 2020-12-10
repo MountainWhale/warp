@@ -2,7 +2,7 @@ import os
 import sqlite3
 import click as click
 import termcolor as tc
-from thing import get_path
+from functions import get_path, get_shell
 
 path = get_path()
 db = sqlite3.connect(os.path.realpath(path))
@@ -17,11 +17,11 @@ warp_points = dict(result.fetchall())
 def warp(name):
     if warp_points.get(name) != None:
         os.chdir(warp_points[name])
-        os.system('bash')
+        os.system(get_shell())
     else:
         print(tc.colored(name, "red"), tc.colored(
             "warp point does not exist", "red"))
-        os.system('bash')
+        os.system(get_shell())
 
 
 if __name__ == "__main__":

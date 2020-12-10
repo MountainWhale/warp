@@ -2,7 +2,7 @@ import os
 import sqlite3
 import click
 import termcolor as tc
-from thing import get_path
+from functions import get_path
 
 path = get_path()
 db = sqlite3.connect(os.path.realpath(path))
