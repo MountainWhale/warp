@@ -5,7 +5,6 @@
   2. open functions.py and change the value of path to wherever your warp.db file is
   3. whilst in functions.py also change the value of shell to be whichever you're using
 
-### Utilisation (without aliases)
 ### Adding a warp point 
  - python3 ~/path_to_add.py $PWD nameofpoint
 ### Deleting a warp point
