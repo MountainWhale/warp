@@ -10,12 +10,11 @@ cursor = db.cursor()
 
 
 @click.command()
-@click.argument('path', default='/home')
 @click.argument('name', default='thing')
-def add(name, path):
+def add(name):
     try:
         cursor.execute(
-            "INSERT INTO warp_points (name, path) VALUES (?, ?)", (name, path))
+            "INSERT INTO warp_points (name, path) VALUES (?, ?)", (name, os.getcwd()))
         db.commit()
         print(tc.colored(f"Successfully added {name} warp point", "cyan"))
     except:
