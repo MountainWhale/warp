@@ -6,7 +6,7 @@
   3. whilst in functions.py also change the value of shell to be whichever you're using
 
 ### Adding a warp point 
- - python3 ~/path_to_add.py $PWD nameofpoint
+ - python3 ~/path_to_add.py nameofpoint
 ### Deleting a warp point
  - python3 ~/path_to_delete.py nameofpoint
 ### Listing warp points
