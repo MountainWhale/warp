@@ -16,3 +16,4 @@
 ### Important Notes
 - Aliases for each cmd make life easier
 - Ensure that you're in the correct directory when adding points
+- You'll need termcolor
